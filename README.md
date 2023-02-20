@@ -6,19 +6,15 @@
 - In Steam, right click on Falcon 4.0 > Properties > Compatibility > enable "Force use of a specific Steam Play compatibility tool" > select Proton 7.0-6 (older/newer Proton versions should work too)
 - Run Falcon 4.0 once, then exit the game (this creates the folder /home/x/.local/share/Steam/steamapps/compatdata/429530)
 - Download BMS installer and updates from https://www.falcon-bms.com/downloads/ (use qBittorrent as other torrent apps have had issues with the download in the past)
-- Exit Steam; ideally restart computer and don't run any other programs, the BMS installer can be very sensitive and abort the installation
-- Install BMS from your ~/Download folder (other directories have caused the installer to abort on my end for whatever reason); Run in terminal: 
+- Install BMS from your ~/Download folder; Run in terminal: 
 
 `
 WINEPREFIX="/home/x/.local/share/Steam/steamapps/compatdata/429530/pfx" wine "/home/x/Downloads/Falcon BMS_4.37_Full_Setup.exe"
 `
-- Let BMS install and try not to open any programs since it can cause the installer to fail
-- Once the installer is asking to search for updates, don't do it and instead finish the installation. The installer will most likely abort again if you try to let it find and install updates. Download the update from https://www.falcon-bms.com/downloads/ instead.
-- Install update (also from your ~/Download folder); run in terminal:
+- wait for the installation to finish
+- optional: make a backup of the game folder if something breaks in the future:
 
-`
-WINEPREFIX="/home/x/.local/share/Steam/steamapps/compatdata/429530/pfx" wine "/home/x/Downloads/Falcon BMS_4.37_Update1.exe"
-`
+/home/x/.local/share/Steam/steamapps/compatdata/429530
 
 ## Run BMS
 - Find the path to the Proton executable you want to use, e.g.: 
