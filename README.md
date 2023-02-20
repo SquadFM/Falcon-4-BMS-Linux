@@ -37,9 +37,13 @@ WINEPREFIX="/home/x/.local/share/Steam/steamapps/compatdata/429530/pfx" wine "/h
 
 ## Opentrack Headtracking
 - in Steam > Falcon 4.0 > Properties > Launch Options:
-WINEDEBUG=+plugplay PROTON_LOG=1 %command% -nomovie
+
+`WINEDEBUG=+plugplay PROTON_LOG=1 %command% -nomovie`
+
 - add user to input group (x = yourusername)
-sudo usermod -a -G input x
+
+`sudo usermod -a -G input x`
+
 - restart computer
 - in Opentrack:
   - Input: PointTracker
