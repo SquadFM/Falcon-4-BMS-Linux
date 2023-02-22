@@ -61,3 +61,32 @@ WINEPREFIX="/home/x/.local/share/Steam/steamapps/compatdata/429530/pfx" wine "/h
 - always start Opentrack first, and then BMS
 - Alt + c, t = restarts TrackIR BMS module (usually not needed, just FYI)
 
+## Weapon Delivery Planner
+- install winetricks (don't use protontricks as it has issues with dotnet installation)
+- run winetricks on prefix:
+
+`WINEPREFIX="/home/x/.local/share/Steam/steamapps/compatdata/429530/pfx" winetricks -q`
+- optional: should winetricks be out of date, run: sudo winetricks --self-update
+  - check the updated winetricks version with: winetricks --version
+  - if you need to rollback winetricks to the old version from your repository, run: sudo winetricks --update-rollback
+- in winetricks > select the default wineprefix > Install a Windows DLL or component > select the following
+dotnet48 (this will automatically install dotnet40 too)
+- ignore any error notifications during installation (they are automatically skipped after a few seconds; no need to press "OK")
+- once the installation is finished you can close the winetricks window(s)
+- download WDP from 
+http://www.weapondeliveryplanner.nl/download/index.html
+- unpack archive and copy folder to 
+/home/x/.local/share/Steam/steamapps/compatdata/429530/pfx/drive_c/
+- the drive_c folder will therefore contain (under /home/x/.local/share/Steam/steamapps/compatdata/429530/pfx/drive_c/):
+  - Falcon BMS 4.37/
+  - Weapon_Delivery_Planner_3.7.24.232/
+  - various other windows folders (e.g. ProgramData, Program Files, windows, etc.)
+- to start WDP, run
+
+`STEAM_COMPAT_DATA_PATH="/home/x/.local/share/Steam/steamapps/compatdata/429530/" STEAM_COMPAT_CLIENT_INSTALL_PATH="/home/x/.local/share/Steam/" "/home/x/.local/share/Steam/steamapps/common/Proton 7.0/proton" run "/home/x/.local/share/Steam/steamapps/compatdata/429530/pfx/drive_c/Weapon_Delivery_Planner_3.7.24.232/WeaponDeliveryPlanner.exe"`
+- ** you'll most likely see a rundll32.exe error message popup which you can ignore, click cancel (it should only show once)
+- the WDP starts with a popup that reads "Theatre 'Aegean' not found in your BMS install" - which you can also ignore, click "OK" - once WDP opens you can select "Korea" from the drop down menu in the upper left (under "File")
+- ** while using WDP it may happen that you see an error message popup that shows "Unhandled exception has occured in your application" - just click on "Continue" to dismiss 
+- Disclaimer: I have not yet used WDP for my DTC (still learning to fly the F-16), therefore please let me know if WDP works or if it fails to write the DTC.
+
+** if anyone has any ideas how to fix these issues please let me know and I can add it to the guide
