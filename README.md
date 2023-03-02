@@ -43,8 +43,7 @@ WINEPREFIX="/home/x/.local/share/Steam/steamapps/compatdata/429530/pfx" wine "/h
 - in Opentrack:
   - Input: PointTracker
   - Output: Wine
-    - Wine (system): /home/x/.local/share/Steam/steamapps/compatdata/429530/pfx/
-    - Wine variant (select this one, not "Wine (system)"): Proton (select Proton version that Falcon 4.0 is using in Steam, e.g. Proton 7.0)
+    - Wine variant: Proton (select Proton version that Falcon 4.0 is using in Steam, e.g. Proton 7.0)
     - select FSYNC (not ESYNC)
     - Protocol: Both
     - Steam application id: 429530
