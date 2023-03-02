@@ -88,4 +88,8 @@ http://www.weapondeliveryplanner.nl/download/index.html
 - ** while using WDP it may happen that you see an error message popup that shows "Unhandled exception has occured in your application" - just click on "Continue" to dismiss 
 - Disclaimer: I have not yet used WDP for my DTC (still learning to fly the F-16), therefore please let me know if WDP works or if it fails to write the DTC.
 
-** if anyone has any ideas how to fix these issues please let me know and I can add it to the guide
+## Avionics Configurator
+- This program only shows a black window. To show it properly run the following command in your terminal:
+WINEPREFIX="/home/x/.local/share/Steam/steamapps/compatdata/429530/pfx" wine reg add "HKCU\\SOFTWARE\\Microsoft\\Avalon.Graphics" /v DisableHWAcceleration /t REG_DWORD /d 1 /f
+
+** if you have an idea how to fix these issues please let me know and I can add it to the guide
