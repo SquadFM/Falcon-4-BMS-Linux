@@ -5,6 +5,18 @@
 - Install Falcon 4.0 on Steam
 - In Steam, right click on Falcon 4.0 > Properties > Compatibility > enable "Force use of a specific Steam Play compatibility tool" > select Proton 7.0-6 (older/newer Proton versions should work too)
 - Run Falcon 4.0 once, then exit the game (this creates the folder /home/x/.local/share/Steam/steamapps/compatdata/429530)
+- install winetricks (don't use protontricks as it has issues with dotnet installation)
+- run winetricks on prefix:
+
+`WINEPREFIX="/home/x/.local/share/Steam/steamapps/compatdata/429530/pfx" winetricks -q`
+- optional: should winetricks be out of date, run: sudo winetricks --self-update
+  - check the updated winetricks version with: winetricks --version
+  - if you need to rollback winetricks to the old version from your repository, run: sudo winetricks --update-rollback
+- in winetricks > select the default wineprefix > Install a Windows DLL or component > select the following
+  - dotnet48 (this will automatically install dotnet40 too)
+  - vcrun2015
+- ignore any error notifications during installation (they are automatically skipped after a few seconds; no need to press "OK")
+- once the installation is finished you can close the winetricks window(s)
 - Download BMS installer and updates from https://www.falcon-bms.com/downloads/ (use qBittorrent as other torrent apps have had issues with the download in the past)
 - Install BMS from your ~/Download folder; Run in terminal: 
 
@@ -31,10 +43,6 @@ WINEPREFIX="/home/x/.local/share/Steam/steamapps/compatdata/429530/pfx" wine "/h
 
 ## Opentrack Headtracking
 - install opentrack
-- in Steam > Falcon 4.0 > Properties > Launch Options:
-
-`WINEDEBUG=+plugplay PROTON_LOG=1 %command% -nomovie`
-
 - add user to input group (x = yourusername)
 
 `sudo usermod -a -G input x`
@@ -61,17 +69,6 @@ WINEPREFIX="/home/x/.local/share/Steam/steamapps/compatdata/429530/pfx" wine "/h
 - Alt + c, t = restarts TrackIR BMS module (usually not needed, just FYI)
 
 ## Weapon Delivery Planner
-- install winetricks (don't use protontricks as it has issues with dotnet installation)
-- run winetricks on prefix:
-
-`WINEPREFIX="/home/x/.local/share/Steam/steamapps/compatdata/429530/pfx" winetricks -q`
-- optional: should winetricks be out of date, run: sudo winetricks --self-update
-  - check the updated winetricks version with: winetricks --version
-  - if you need to rollback winetricks to the old version from your repository, run: sudo winetricks --update-rollback
-- in winetricks > select the default wineprefix > Install a Windows DLL or component > select the following
-dotnet48 (this will automatically install dotnet40 too)
-- ignore any error notifications during installation (they are automatically skipped after a few seconds; no need to press "OK")
-- once the installation is finished you can close the winetricks window(s)
 - download WDP from 
 http://www.weapondeliveryplanner.nl/download/index.html
 - unpack archive and copy folder to 
