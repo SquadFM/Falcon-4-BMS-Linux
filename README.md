@@ -1,4 +1,6 @@
-Scroll down to see installation instructions for Wine/Lutris (e.g. for GOG version of Falcon 4.0)
+Notes:
+- Scroll down to see installation instructions for Wine/Lutris (e.g. for GOG version of Falcon 4.0)
+- replace home/x/ with your home directory
 
 
 
@@ -106,6 +108,7 @@ http://www.weapondeliveryplanner.nl/download/index.html
 ## Install required software
 - install Lutris 
 - install wine-staging (recommended)
+- install winetricks
 
 ## Lutris: Create wine prefix and install Falcon 4.0
 - start Lutris and click on + sign in upper left ("Add Game") > "Install a Windows game from media"
