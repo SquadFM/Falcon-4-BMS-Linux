@@ -81,6 +81,7 @@ WINEPREFIX="/home/x/.local/share/Steam/steamapps/compatdata/429530/pfx" wine "/h
 - Alt + c, t = restarts TrackIR BMS module (usually not needed, just FYI)
 
 ## Weapon Delivery Planner
+- this app can NOT be started from the Alternative Launcher and therefore requires a separate command to run
 - download WDP from 
 http://www.weapondeliveryplanner.nl/download/index.html
 - unpack archive and copy folder to 
