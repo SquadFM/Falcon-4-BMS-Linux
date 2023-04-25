@@ -1,3 +1,7 @@
+Scroll down to see installation instructions for Wine/Lutris (e.g. for GOG version of Falcon 4.0)
+
+
+
 # Falcon 4 BMS on Linux with Steam (tested with BMS 4.37)
 
 
@@ -94,7 +98,9 @@ http://www.weapondeliveryplanner.nl/download/index.html
 
 
 
-### ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+### -------------------------------------------------------
+### -------------------------------------------------------
+
 # Falcon 4 BMS on Linux with Wine and Lutris (tested with BMS 4.37)
 
 ## Install required software
