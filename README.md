@@ -7,6 +7,12 @@ Notes:
 # Falcon 4 BMS on Linux with Steam (tested with BMS 4.37)
 
 
+## Install required software
+- Steam
+- wine-staging (recommended)
+- winetricks
+- optional: opentrack
+
 ## Installation
 - Install Falcon 4.0 on Steam
 - In Steam, right click on Falcon 4.0 > Properties > Compatibility > enable "Force use of a specific Steam Play compatibility tool" > select Proton 7.0-6 (older/newer Proton versions should work too)
@@ -106,9 +112,10 @@ http://www.weapondeliveryplanner.nl/download/index.html
 # Falcon 4 BMS on Linux with Wine and Lutris (tested with BMS 4.37)
 
 ## Install required software
-- install Lutris 
-- install wine-staging (recommended)
-- install winetricks
+- Lutris
+- wine-staging (recommended)
+- winetricks
+- optional: opentrack
 
 ## Lutris: Create wine prefix and install Falcon 4.0
 - start Lutris and click on + sign in upper left ("Add Game") > "Install a Windows game from media"
