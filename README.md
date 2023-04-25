@@ -195,5 +195,6 @@ http://www.weapondeliveryplanner.nl/download/index.html
 
 ## Avionics Configurator - Prevent black window
 - this app can be started from the Alternative Launcher
+- This program only shows a black window. To show it properly run the following command in your terminal:
 - run the command below in your terminal:
 WINEPREFIX="/home/x/Games/FalconBMS" wine reg add "HKCU\\SOFTWARE\\Microsoft\\Avalon.Graphics" /v DisableHWAcceleration /t REG_DWORD /d 1 /f
