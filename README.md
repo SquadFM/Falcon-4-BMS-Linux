@@ -1,5 +1,5 @@
 Notes:
-- Scroll down to see installation instructions for Wine/Lutris (e.g. for GOG version of Falcon 4.0)
+- [Click here](#falcon-4-bms-on-linux-with-wine-and-lutris-tested-with-bms-437) to see installation instructions for Wine/Lutris (e.g. for the GOG version of Falcon 4.0)
 - replace home/x/ with your home directory
 
 
@@ -100,8 +100,8 @@ http://www.weapondeliveryplanner.nl/download/index.html
 
 
 
-### -------------------------------------------------------
-### -------------------------------------------------------
+
+### _____________________________________________________________
 
 # Falcon 4 BMS on Linux with Wine and Lutris (tested with BMS 4.37)
 
