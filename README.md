@@ -81,29 +81,22 @@ WINEPREFIX="/home/x/.local/share/Steam/steamapps/compatdata/429530/pfx" wine "/h
 - Alt + c, t = restarts TrackIR BMS module (usually not needed, just FYI)
 
 ## Weapon Delivery Planner
-- This app can NOT be started from the Alternative Launcher and therefore requires a separate command to run
+- Note: This app can be started from the Alternative Launcher
 - Download WDP from 
 http://www.weapondeliveryplanner.nl/download/index.html
 - Unpack archive and copy folder to 
 /home/x/.local/share/Steam/steamapps/compatdata/429530/pfx/drive_c/
-- The drive_c folder will therefore contain (under /home/x/.local/share/Steam/steamapps/compatdata/429530/pfx/drive_c/):
-  - Falcon BMS 4.37/
-  - Weapon_Delivery_Planner_3.7.24.232/
-  - various other windows folders (e.g. ProgramData, Program Files, windows, etc.)
-- To start WDP, run
-
-`STEAM_COMPAT_DATA_PATH="/home/x/.local/share/Steam/steamapps/compatdata/429530/" STEAM_COMPAT_CLIENT_INSTALL_PATH="/home/x/.local/share/Steam/" "/home/x/.local/share/Steam/steamapps/common/Proton 7.0/proton" run "/home/x/.local/share/Steam/steamapps/compatdata/429530/pfx/drive_c/Weapon_Delivery_Planner_3.7.24.232/WeaponDeliveryPlanner.exe"`
-- ** you'll most likely see a rundll32.exe error message popup which you can ignore, click cancel (it should only show once)
+- The path may look something like this: /home/x/.local/share/Steam/steamapps/compatdata/429530/pfx/drive_c/Weapon_Delivery_Planner_3.7.24.232/
+- Start the Alternative Launcher and select the folder above; WDP will be automatically started
+- If see a rundll32.exe error message popup you can ignore it, just click cancel or no (it should only show once)
 - The WDP starts with a popup that reads "Theatre 'Aegean' not found in your BMS install" - which you can also ignore, click "OK" - once WDP opens you can select "Korea" from the drop down menu in the upper left (under "File")
-- ** while using WDP it may happen that you see an error message popup that shows "Unhandled exception has occured in your application" - just click on "Continue" to dismiss 
+- While using WDP it may happen that you see an error message popup that shows "Unhandled exception has occured in your application" - just click on "Continue" to dismiss 
 
 ## Avionics Configurator
+- This app can be started from the Alternative Launcher
 - This program only shows a black window. To show it properly run the following command in your terminal:
  
 `WINEPREFIX="/home/x/.local/share/Steam/steamapps/compatdata/429530/pfx" wine reg add "HKCU\\SOFTWARE\\Microsoft\\Avalon.Graphics" /v DisableHWAcceleration /t REG_DWORD /d 1 /f`
-
-** if you have an idea how to fix these issues please let me know and I can add it to the guide
-
 
 
 
@@ -178,19 +171,13 @@ http://www.weapondeliveryplanner.nl/download/index.html
 
 
 ## Weapon Delivery Planner
-- This app can NOT be started from the Alternative Launcher, therefore we'll create a launcher in Lutris
-- To run WDP go back to Lutris
-- In Lutris > right click on "Falcon BMS" launcher > duplicate
-- Right click on the new launcher (should have a "2" in the end of its name) > Configure > Game info > set name to: "Falcon BMS WDP"
+- Note: This app can be started from the Alternative Launcher
 - Download WDP from 
 http://www.weapondeliveryplanner.nl/download/index.html
 - Unpack archive and copy unzipped folder to 
 /home/x/Games/FalconBMS/drive_c/
 - The path should look like: /home/x/Games/FalconBMS/drive_c/Weapon_Delivery_Planner_3.7.24.232/
-- In Lutris right-click on "Falcon BMS WDP" > "Configure" > "Game options" > "Executable" > "Browse" and select the WDP .exe file, path should look similar to the one below:
-
-/home/x/Games/FalconBMS/drive_c/Weapon_Delivery_Planner_3.7.24.232/WeaponDeliveryPlanner.exe
-- Click "Save"
+- Start the Alternative Launcher and select the folder above; WDP will be automatically started
 - If see a rundll32.exe error message popup you can ignore it, just click cancel or no (it should only show once)
 - The WDP starts with a popup that reads "Theatre 'Aegean' not found in your BMS install" - which you can also ignore, click "OK" - once WDP opens you can select "Korea" from the drop down menu in the upper left (under "File")
 - While using WDP it may happen that you see an error message popup that shows "Unhandled exception has occured in your application" - just click on "Continue" to dismiss 
