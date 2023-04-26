@@ -138,7 +138,7 @@ http://www.weapondeliveryplanner.nl/download/index.html
 - In winetricks > select the default wineprefix > Install a Windows DLL or component > select the following
   - dotnet48 (this will automatically install dotnet40 too)
   - vcrun2015
-- Wait for winetricks to install all libraries (any winetricks pop-ups should be skipped after a few seconds) and once done, close the winetricks window
+- Wait for winetricks to install all libraries (any winetricks pop-ups are normal and will automatically be skipped after a few seconds) and once done, close the winetricks window
 
 
 ## Lutris: Install Falcon BMS
