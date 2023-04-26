@@ -144,7 +144,7 @@ http://www.weapondeliveryplanner.nl/download/index.html
 ## Lutris: Install Falcon BMS
 - Now we're going to install Falcon BMS into the same prefix
 - In Lutris > right click on "Falcon 4.0" launcher > duplicate
-- Right click on the new launcher (should have a "2" in the end of its name) > Configure > Game info > set name to: "Falcon BMS"
+- Right click on the new launcher (should have a "2" at the end of its name) > Configure > Game info > set name to: "Falcon BMS"
 - In the same window go to "Game options" > "Executable" > "Browse" and select Falcon BMS installer .exe file > click on "Save"
 - Start "Falcon BMS" launcher (or right click > "Play") > follow BMS installer instructions (install DirectX too)
 - Wait for the BMS installation to finish
