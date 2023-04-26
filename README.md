@@ -81,7 +81,7 @@ WINEPREFIX="/home/x/.local/share/Steam/steamapps/compatdata/429530/pfx" wine "/h
 - Alt + c, t = restarts TrackIR BMS module (usually not needed, just FYI)
 
 ## Weapon Delivery Planner
-- Note: This app can be started from the Alternative Launcher
+- This app can be started from the Alternative Launcher
 - Download WDP from 
 http://www.weapondeliveryplanner.nl/download/index.html
 - Unpack archive and copy folder to 
@@ -89,7 +89,7 @@ http://www.weapondeliveryplanner.nl/download/index.html
 - The path may look something like this: /home/x/.local/share/Steam/steamapps/compatdata/429530/pfx/drive_c/Weapon_Delivery_Planner_3.7.24.232/
 - Start the Alternative Launcher and select the folder above; WDP will be automatically started
 - If see a rundll32.exe error message popup you can ignore it, just click cancel or no (it should only show once)
-- The WDP starts with a popup that reads "Theatre 'Aegean' not found in your BMS install" - which you can also ignore, click "OK" - once WDP opens you can select "Korea" from the drop down menu in the upper left (under "File")
+- WDP starts with a popup that reads "Theatre 'Aegean' not found in your BMS install" - which you can also ignore, click "OK" - once WDP opens you can select "Korea" from the drop down menu in the upper left (under "File")
 - While using WDP it may happen that you see an error message popup that shows "Unhandled exception has occured in your application" - just click on "Continue" to dismiss 
 
 ## Avionics Configurator
@@ -171,7 +171,7 @@ http://www.weapondeliveryplanner.nl/download/index.html
 
 
 ## Weapon Delivery Planner
-- Note: This app can be started from the Alternative Launcher
+- This app can be started from the Alternative Launcher
 - Download WDP from 
 http://www.weapondeliveryplanner.nl/download/index.html
 - Unpack archive and copy unzipped folder to 
@@ -179,7 +179,7 @@ http://www.weapondeliveryplanner.nl/download/index.html
 - The path should look like: /home/x/Games/FalconBMS/drive_c/Weapon_Delivery_Planner_3.7.24.232/
 - Start the Alternative Launcher and select the folder above; WDP will be automatically started
 - If see a rundll32.exe error message popup you can ignore it, just click cancel or no (it should only show once)
-- The WDP starts with a popup that reads "Theatre 'Aegean' not found in your BMS install" - which you can also ignore, click "OK" - once WDP opens you can select "Korea" from the drop down menu in the upper left (under "File")
+- WDP starts with a popup that reads "Theatre 'Aegean' not found in your BMS install" - which you can also ignore, click "OK" - once WDP opens you can select "Korea" from the drop down menu in the upper left (under "File")
 - While using WDP it may happen that you see an error message popup that shows "Unhandled exception has occured in your application" - just click on "Continue" to dismiss 
 
 
