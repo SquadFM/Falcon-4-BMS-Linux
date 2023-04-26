@@ -96,7 +96,6 @@ http://www.weapondeliveryplanner.nl/download/index.html
 - ** you'll most likely see a rundll32.exe error message popup which you can ignore, click cancel (it should only show once)
 - The WDP starts with a popup that reads "Theatre 'Aegean' not found in your BMS install" - which you can also ignore, click "OK" - once WDP opens you can select "Korea" from the drop down menu in the upper left (under "File")
 - ** while using WDP it may happen that you see an error message popup that shows "Unhandled exception has occured in your application" - just click on "Continue" to dismiss 
-- Disclaimer: I have not yet used WDP for my DTC (still learning to fly the F-16), therefore please let me know if WDP works or if it fails to write the DTC.
 
 ## Avionics Configurator
 - This program only shows a black window. To show it properly run the following command in your terminal:
