@@ -143,6 +143,7 @@ http://www.weapondeliveryplanner.nl/download/index.html
 - Start "Falcon BMS" launcher (or right click > "Play") > follow BMS installer instructions (install DirectX too)
 - Wait for the BMS installation to finish
 - Right click the "Falcon BMS" launcher > "Configure" > "Game options" > Executable > select Falcon BMS Alternative Launcher.exe which should be under "/home/x/Games/FalconBMS/drive_c/Falcon BMS 4.37/Launcher/FalconBMS_Alternative_Launcher.exe"
+- Optional: You can set an FPS limit in Lutris, which can help your GPU to run less hot and consume less power. It can also sometimes help to run a game smoother without micro stutters. In Lutris right-click on the BMS launcher > Configure > System options > FPS limit - I usually set 60 FPS which is sufficient in most games, but obviously you can set any value. 
 - Double-click the "Falcon BMS" launcher to start Falcon BMS
 
 
