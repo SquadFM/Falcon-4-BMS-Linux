@@ -27,6 +27,7 @@ Notes:
 - In winetricks > select the default wineprefix > Install a Windows DLL or component > select the following
   - dotnet48 (this will automatically install dotnet40 too)
   - vcrun2015
+  - dxvk (not required but can increase FPS)
 - Ignore any error notifications during installation (they are automatically skipped after a few seconds; no need to press "OK")
 - Once the installation is finished you can close the winetricks window(s)
 - Download BMS installer and updates from https://www.falcon-bms.com/downloads/ (use qBittorrent as other torrent apps have had issues with the download in the past)
@@ -132,6 +133,7 @@ http://www.weapondeliveryplanner.nl/download/index.html
 - In winetricks > select the default wineprefix > Install a Windows DLL or component > select the following
   - dotnet48 (this will automatically install dotnet40 too)
   - vcrun2015
+  - dxvk (not required but can increase FPS)
 - Wait for winetricks to install all libraries (any winetricks pop-ups are normal and will automatically be skipped after a few seconds) and once done, close the winetricks window
 
 
