@@ -113,7 +113,7 @@ http://www.weapondeliveryplanner.nl/download/index.html
 
 
 
-### _____________________________________________________________
+-------------------------------------------------------------------
 
 # Falcon 4 BMS on Linux with Wine and Lutris (tested with BMS 4.37)
 
