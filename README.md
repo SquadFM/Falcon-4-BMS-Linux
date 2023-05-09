@@ -31,7 +31,7 @@ Notes:
  
 `WINEPREFIX="/home/x/.local/share/Steam/steamapps/compatdata/429530/pfx" winetricks list-installed`
 
-- If not all of the above libraries were installed (dotnet40, dotnet48, vcrun2015, dxvk), follow these instructions:
+- The following steps in this chapter are only required if not all of the above libraries were installed (dotnet40, dotnet48, vcrun2015, dxvk). If so, follow these instructions:
 
 `WINEPREFIX="/home/x/.local/share/Steam/steamapps/compatdata/429530/pfx" winetricks -q`
 
@@ -146,7 +146,7 @@ http://www.weapondeliveryplanner.nl/download/index.html
  
 `WINEPREFIX="/home/x/Games/FalconBMS" winetricks list-installed`
 
-- If not all of the above libraries were installed (dotnet40, dotnet48, vcrun2015, dxvk), follow these instructions:
+- The following steps in this chapter are only required if not all of the above libraries were installed (dotnet40, dotnet48, vcrun2015, dxvk). If so, follow these instructions:
 
 `WINEPREFIX="/home/x/Games/FalconBMS" winetricks -q`
 
