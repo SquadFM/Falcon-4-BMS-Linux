@@ -17,6 +17,8 @@ Notes:
 - Install Falcon 4.0 on Steam
 - In Steam, right click on Falcon 4.0 > Properties > Compatibility > enable "Force use of a specific Steam Play compatibility tool" > select Proton 7.0-6 (older/newer Proton versions should work too)
 - Run Falcon 4.0 once, then exit the game (this creates the folder /home/x/.local/share/Steam/steamapps/compatdata/429530)
+
+## Install required libraries
 - Install winetricks (don't use protontricks as it has issues with dotnet installation)
 - Sidenote: should winetricks be out of date, run: sudo winetricks --self-update
   - check the updated winetricks version with: winetricks --version
@@ -39,12 +41,12 @@ Notes:
   - dxvk
 - Ignore any pop-up notifications during installation (they are automatically skipped after a few seconds; no need to press "OK")
 - Once the installation is finished you can close the winetricks window(s)
+
+## Install Falcon BMS
 - Download BMS installer and updates from https://www.falcon-bms.com/downloads/ (ideally use qBittorrent as other torrent apps have had issues with the download in the past)
 - Install BMS from your ~/Download folder; Run in terminal: 
 
-`
-WINEPREFIX="/home/x/.local/share/Steam/steamapps/compatdata/429530/pfx" wine "/home/x/Downloads/Falcon BMS_4.37_Full_Setup.exe"
-`
+`WINEPREFIX="/home/x/.local/share/Steam/steamapps/compatdata/429530/pfx" wine "/home/x/Downloads/Falcon BMS_4.37_Full_Setup.exe"`
 - Wait for the installation to finish
 - Optional: make a backup of the game folder if something breaks in the future: /home/x/.local/share/Steam/steamapps/compatdata/429530
 
