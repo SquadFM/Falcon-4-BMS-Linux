@@ -9,7 +9,7 @@ Notes:
 
 ## Install required software
 - Steam
-- wine-staging (recommended)
+- wine-staging (recommended as this is the latest wine version)
 - winetricks
 - optional: opentrack
 
@@ -18,19 +18,28 @@ Notes:
 - In Steam, right click on Falcon 4.0 > Properties > Compatibility > enable "Force use of a specific Steam Play compatibility tool" > select Proton 7.0-6 (older/newer Proton versions should work too)
 - Run Falcon 4.0 once, then exit the game (this creates the folder /home/x/.local/share/Steam/steamapps/compatdata/429530)
 - Install winetricks (don't use protontricks as it has issues with dotnet installation)
-- Run winetricks on prefix:
-
-`WINEPREFIX="/home/x/.local/share/Steam/steamapps/compatdata/429530/pfx" winetricks -q`
-- Optional: should winetricks be out of date, run: sudo winetricks --self-update
+- Sidenote: should winetricks be out of date, run: sudo winetricks --self-update
   - check the updated winetricks version with: winetricks --version
   - if you need to rollback winetricks to the old version from your repository, run: sudo winetricks --update-rollback
-- In winetricks > select the default wineprefix > Install a Windows DLL or component > select the following
+- Install libraries with winetricks:
+
+`WINEPREFIX="/home/x/.local/share/Steam/steamapps/compatdata/429530/pfx" winetricks -q dotnet48 vcrun2015 dxvk`
+
+- After the installation has finished, check that at least the following libraries were installed: dotnet40, dotnet48, vcrun2015, dxvk (there will be a few other libraries as well) - Note: if you see a rundll32.exe error pop-up, just click on "No" to proceed
+ 
+`WINEPREFIX="/home/x/.local/share/Steam/steamapps/compatdata/429530/pfx" winetricks list-installed`
+
+- If not all of the above libraries were installed (dotnet40, dotnet48, vcrun2015, dxvk), follow these instructions:
+
+`WINEPREFIX="/home/x/.local/share/Steam/steamapps/compatdata/429530/pfx" winetricks -q`
+
+- In winetricks > select the default wineprefix > Install a Windows DLL or component > select the following (if they're missing)
   - dotnet48 (this will automatically install dotnet40 too)
   - vcrun2015
-  - dxvk (not required but can increase FPS)
-- Ignore any error notifications during installation (they are automatically skipped after a few seconds; no need to press "OK")
+  - dxvk
+- Ignore any pop-up notifications during installation (they are automatically skipped after a few seconds; no need to press "OK")
 - Once the installation is finished you can close the winetricks window(s)
-- Download BMS installer and updates from https://www.falcon-bms.com/downloads/ (use qBittorrent as other torrent apps have had issues with the download in the past)
+- Download BMS installer and updates from https://www.falcon-bms.com/downloads/ (ideally use qBittorrent as other torrent apps have had issues with the download in the past)
 - Install BMS from your ~/Download folder; Run in terminal: 
 
 `
@@ -108,7 +117,7 @@ http://www.weapondeliveryplanner.nl/download/index.html
 
 ## Install required software
 - Lutris
-- wine-staging (recommended)
+- wine-staging (recommended as this is the latest wine version)
 - winetricks
 - optional: opentrack
 
@@ -123,18 +132,28 @@ http://www.weapondeliveryplanner.nl/download/index.html
 
 
 ## Install required libraries into Falcon wine prefix
-- Run winetricks on prefix:
+- Install winetricks
+- Sidenote: should winetricks be out of date, run: sudo winetricks --self-update
+  - check the updated winetricks version with: winetricks --version
+  - if you need to rollback winetricks to the old version from your repository, run: sudo winetricks --update-rollback
+- Install libraries with winetricks:
+
+`WINEPREFIX="/home/x/Games/FalconBMS" winetricks -q dotnet48 vcrun2015 dxvk`
+
+- After the installation has finished, check that at least the following libraries were installed: dotnet40, dotnet48, vcrun2015, dxvk (there will be a few other libraries as well) - Note: if you see a rundll32.exe error pop-up, just click on "No" to proceed
+ 
+`WINEPREFIX="/home/x/Games/FalconBMS" winetricks list-installed`
+
+- If not all of the above libraries were installed (dotnet40, dotnet48, vcrun2015, dxvk), follow these instructions:
 
 `WINEPREFIX="/home/x/Games/FalconBMS" winetricks -q`
 
-- Optional: should winetricks be out of date, run: sudo winetricks --self-update
-  - Check the updated winetricks version with: winetricks --version
-  - If you need to rollback winetricks to the old version from your repository, run: sudo winetricks --update-rollback
-- In winetricks > select the default wineprefix > Install a Windows DLL or component > select the following
+- In winetricks > select the default wineprefix > Install a Windows DLL or component > select the following (if they're missing)
   - dotnet48 (this will automatically install dotnet40 too)
   - vcrun2015
-  - dxvk (not required but can increase FPS)
-- Wait for winetricks to install all libraries (any winetricks pop-ups are normal and will automatically be skipped after a few seconds) and once done, close the winetricks window
+  - dxvk
+- Ignore any pop-up notifications during installation (they are automatically skipped after a few seconds; no need to press "OK")
+- Once the installation is finished you can close the winetricks window(s)
 
 
 ## Lutris: Install Falcon BMS
