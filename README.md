@@ -112,6 +112,12 @@ http://www.weapondeliveryplanner.nl/download/index.html
 `WINEPREFIX="/home/x/.local/share/Steam/steamapps/compatdata/429530/pfx" wine reg add "HKCU\\SOFTWARE\\Microsoft\\Avalon.Graphics" /v DisableHWAcceleration /t REG_DWORD /d 1 /f`
 
 
+## FIREWALL CONFIGURATION
+- The following ports have to be opened in your computers firewall if you want to play online
+`sudo ufw allow 2934/udp`
+`sudo ufw allow 2935/udp`
+- Also enable port forwarding to your computer for both UDP ports
+
 
 -------------------------------------------------------------------
 
@@ -213,3 +219,9 @@ http://www.weapondeliveryplanner.nl/download/index.html
 - This program only shows a black window. To show it properly run the following command in your terminal:
 
 `WINEPREFIX="/home/x/Games/FalconBMS" wine reg add "HKCU\\SOFTWARE\\Microsoft\\Avalon.Graphics" /v DisableHWAcceleration /t REG_DWORD /d 1 /f`
+
+## FIREWALL CONFIGURATION
+- The following ports have to be opened in your computers firewall if you want to play online
+`sudo ufw allow 2934/udp`
+`sudo ufw allow 2935/udp`
+- Also enable port forwarding to your computer for both UDP ports
