@@ -114,11 +114,22 @@ http://www.weapondeliveryplanner.nl/download/index.html
 
 ## FIREWALL CONFIGURATION
 - The following ports have to be opened in your computers firewall if you want to play online
+- Ports 2934, 2935 are required for BMS
+- Ports 9987, 9988, 9989 are required for IVC
 
 `sudo ufw allow 2934/udp`
 
 `sudo ufw allow 2935/udp`
-- Also enable port forwarding to your computer for both UDP ports
+
+`sudo ufw allow 9987/udp`
+
+`sudo ufw allow 9988/udp`
+
+`sudo ufw allow 9989/udp`
+
+
+- Also enable port forwarding to your computer for these UDP ports
+
 
 
 -------------------------------------------------------------------
@@ -224,9 +235,18 @@ http://www.weapondeliveryplanner.nl/download/index.html
 
 ## FIREWALL CONFIGURATION
 - The following ports have to be opened in your computers firewall if you want to play online
+- Ports 2934, 2935 are required for BMS
+- Ports 9987, 9988, 9989 are required for IVC
 
 `sudo ufw allow 2934/udp`
 
 `sudo ufw allow 2935/udp`
-- Also enable port forwarding to your computer for both UDP ports
 
+`sudo ufw allow 9987/udp`
+
+`sudo ufw allow 9988/udp`
+
+`sudo ufw allow 9989/udp`
+
+
+- Also enable port forwarding to your computer for these UDP ports
