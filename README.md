@@ -250,3 +250,12 @@ http://www.weapondeliveryplanner.nl/download/index.html
 
 
 - Also enable port forwarding to your computer for these UDP ports
+
+
+# Disabling force feedback for controllers
+
+If you have a gamepad or controller (such as the builtin in the Steamdeck), make sure that you disable it using
+the Wine Control Panel by setting the controller as "disabled" (neither dinput nor xinput).
+
+In case that's not enough, and the controller is still being picked up through xinput,
+add `set g_bVibrateXInput 0` to your `Falcon BMS User.cfg` file.
