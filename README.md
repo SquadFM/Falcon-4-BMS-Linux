@@ -1,4 +1,5 @@
-*For Falcon BMS 4.38 use Xeno's excellent instructions to run BMS on Linux incl. VR.*
+# *For Falcon BMS 4.38 use Xeno's excellent instructions to run BMS on Linux incl. VR.*
+
 https://forum.falcon-bms.com/post/434604
 
 
