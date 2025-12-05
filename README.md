@@ -1,3 +1,11 @@
+For Falcon BMS 4.38 use Xeno's excellent instructions to run BMS on Linux incl. VR. 
+https://forum.falcon-bms.com/post/434604
+
+
+---------
+
+These are the old instructions for BMS 4.37:
+
 Notes:
 - [Click here](#falcon-4-bms-on-linux-with-wine-and-lutris-tested-with-bms-437) for Wine/Lutris installation instructions (e.g. for the GOG version of Falcon 4.0)
 - Replace home/x/ with your home directory in the instructions below
